@@ -1,3 +1,10 @@
+## Pulse Sensor Playground for ESP32
+
+This repository contains PulseSensor Playground library for ESP32. The code is mainly from here (https://github.com/WorldFamousElectronics/PulseSensorPlayground). We slightly change PulseSensor.cpp to add following line
+
+Signal = map(analogRead(InputPin), 0, 4095, 0, 1023);
+
+to handle the difference of analog reading value range between Arduino (0-1023) and ESP32 (0-4095). 
 
 ![logo](https://avatars0.githubusercontent.com/u/7002937?v=3&s=200)
 ## [PulseSensor.com](https://pulsesensor.com) Playground
